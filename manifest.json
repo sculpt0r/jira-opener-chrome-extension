@@ -1,7 +1,7 @@
 {
-  "name": "Getting Started Example",
+  "name": "JIRA Ticket Opener",
   "version": "1.0",
-  "description": "Build an Extension!",
+  "description": "Open JIRA tickets from text",
   "manifest_version": 2,
   "permissions": ["storage", "contextMenus"],
   "background": {
