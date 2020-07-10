@@ -3,9 +3,9 @@ chrome.contextMenus.onClicked.addListener(function (info, tab) {
     jiraURL: 'http://'
   }, function (items) {
     console.log(items.jiraURL);
-    // let url = "http://sculpt0r.net/" + info.selectionText
-    // var win = window.open(url, '_blank');
-    // win.focus();
+    let url = new URL(info.selectionText, items.jiraURL)
+    var win = window.open(url, '_blank');
+    win.focus();
 
     // alert(info.selectionText)
     // alert(JSON.stringify(info))
